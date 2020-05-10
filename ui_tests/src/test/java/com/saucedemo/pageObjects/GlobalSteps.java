@@ -17,6 +17,7 @@ public class GlobalSteps {
         return new SignInPage(true);
     }
 
+
     public static String getFormattedItems(List<WebElement> rows) {
         List<String> formattedRows = rows.stream()
                 .map(row -> (Objects.requireNonNull(row.getAttribute("innerText"))
